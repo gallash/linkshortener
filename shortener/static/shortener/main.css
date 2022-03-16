@@ -1,0 +1,78 @@
+/* Main document */
+main{
+    display: flex;
+    margin: 2em;
+    justify-content: center;
+    color: gray;
+    flex-direction: column;
+}
+
+.main-div{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-div > h1{
+    text-align: center;
+    color: darkorange;
+}
+
+.regular-text{
+    text-align: center;
+}
+
+.fieldset{
+    width:auto;
+    border-style: none;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+.fieldset .form-group{
+    display: flex;
+    width:auto;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+.form-group > div{
+    flex-direction: column;
+}
+
+.pads{
+    width: 32em;
+    align-self: center;
+}
+
+.fieldset .form-group div{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-left: 0%;
+    padding-right: 0%;
+    display: -webkit-flex;
+}
+
+.urlinput{
+    /* width: 100%; */
+    width:auto;
+    -webkit-flex: 1;
+}
+
+
+
+/* Message tags */
+.message-success{
+    background-color: lightgreen;
+    color: green;
+}
+
+.message-warning{
+    color: gold;
+    background-color: rgb(150, 110, 11);
+}
+
+.message-error{
+    background-color:rgb(245, 35, 77);
+    color: rgb(131, 5, 5);
+}

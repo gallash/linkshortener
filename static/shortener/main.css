@@ -1,0 +1,12 @@
+main{
+    display: flex;
+    /* box-sizing: border-box; */
+    margin: 2em;
+    color: aqua;
+    background-color: black;
+}
+
+main > h1{
+    text-align: center;
+    justify-content: center;
+}

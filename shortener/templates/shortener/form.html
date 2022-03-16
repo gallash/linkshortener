@@ -1,0 +1,27 @@
+{% extends "shortener/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<!-- This page will receive the input URL of the user and return the shortened link as a message -->
+
+    <main>
+        <div class="main-div">
+            <h1>Link Shortener</h1>
+            <p class="regular-text pads">Enter the link to be shortened. A shortened link will appear after it is validated.</p>
+            <form method="POST" class="pads">
+                {% csrf_token %}
+                <fieldset class="fieldset">
+                    {{ form|crispy }}
+                </fieldset>
+            </form>
+        </div>
+        {% if messages %}
+            {% for message in messages %}
+                <div class="pads message-{{ message.tags }}">
+                    <p class="regular-text">{{ message }}</p>
+                </div>
+            {% endfor %}
+        {% endif %}
+    </main>
+
+{% endblock %}
