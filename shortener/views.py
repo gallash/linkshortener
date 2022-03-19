@@ -27,7 +27,7 @@ import requests
 
 
 
-base_link = 'http://localhost:8000/'
+base_link = 'tanshuku.pythonanywhere.com/'
 puncts = '._-~'
 
 
