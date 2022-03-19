@@ -1,4 +1,4 @@
-#Welcome to Link Shortener
+# Welcome to Link Shortener
 
 ## The why I built it and how does it work
 I wanted to create the tool for shortening links the way I wanted it to be, however flexible I wanted and with a simple UI. The user will simply access the main page, paste the link he/she wants to shorten and press Enter. If the link is valid, then a message will appear to the user containing the shortened link.
